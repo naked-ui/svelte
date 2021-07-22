@@ -13,24 +13,24 @@
 	<a {href} {style}><slot>Button text</slot></a>
 {/if}
 
-<!-- <style lang="scss">
+<style>
 	@import 'sxcss';
 	button,
 	a {
-		padding: space(4) space(6);
+		/* padding: space(4) space(6); */
 		background: var(--background);
 		appearance: none;
 		text-decoration: none;
 		color: var(--color, #fff);
-		border-radius: space(12);
-		@include font(17px, 500);
+		/* border-radius: space(12); */
+		/* @include font(17px, 500); */
 		transition: var(--transition-1);
 
-		&:hover {
+		/* &:hover {
 			@media (min-width: 768px) {
 				background: var(--background-hover, var(--background));
 				transform: translate(0, space(-1));
 			}
-		}
+		} */
 	}
-</style> -->
+</style>
