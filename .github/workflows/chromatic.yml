@@ -6,6 +6,10 @@ name: 'Chromatic'
 # Event for the workflow
 on: pull_request
 
+paths:
+  - '.storybook/**'
+  - 'src/components/**'
+
 # List of jobs
 jobs:
   chromatic-deployment:
@@ -26,13 +30,4 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           exitZeroOnChanges: true # 👈 Option to prevent the workflow from failing
 
-on:
-  push:
-    branches:    
-      - 'develop'
-      - 'main'
-      - 'allozaur/**'
-    paths:
-      - '.storybook/**'
-      - 'src/components/**'
 
