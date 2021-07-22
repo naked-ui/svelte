@@ -1,3 +1,3 @@
-export default [
-  {},
-];
+const config = {
+  compilerOptions: null
+}

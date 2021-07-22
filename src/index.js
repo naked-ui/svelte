@@ -1,1 +1,1 @@
-export { default as default } from './NuiButton/index.svelte';
+export { default as default } from './NuiButton/NuiButton.svelte';
