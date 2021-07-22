@@ -10,7 +10,8 @@
     "test": "jest test",
     "test:watch": "yarn test -- --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "del-cli docs && build-storybook -c .storybook -o docs"
+    "build-storybook": "del-cli docs && build-storybook -c .storybook -o docs",
+    "chromatic": "npx chromatic --project-token=24c457aa702f"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
