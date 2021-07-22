@@ -22,9 +22,9 @@
 		appearance: none;
 		text-decoration: none;
 		color: var(--color, #fff);
+		transition: var(--transition-1);
 		/* border-radius: space(12); */
 		/* @include font(17px, 500); */
-		transition: var(--transition-1);
 
 		/* &:hover {
 			@media (min-width: 768px) {
