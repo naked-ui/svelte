@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story, Template } from '@storybook/addon-svelte-csf';
 
-  import NuiButton from './NuiButton.svelte';
+  import NuiButton from '/src/components/NuiButton/NuiButton.svelte';
 
   let count = 0;
   function handleClick() {
