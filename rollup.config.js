@@ -3,6 +3,8 @@ import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 import sveltePreprocess from 'svelte-preprocess';
+import alias from '@rollup/plugin-alias';
+import css from 'rollup-plugin-css-only'
 
 const name = pkg.name
 	.replace(/^(@\S+\/)?(svelte-)?(\S+)/, '$3')
@@ -27,6 +29,12 @@ export default {
 				}
 			),
 		}),
+		css({ output: 'index.css' }),
 		resolve(),
+		alias({
+			entries: [
+				{ find: '@components', replacement: 'src/components' }
+			]
+		})
 	]
 };
