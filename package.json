@@ -1,9 +1,11 @@
 {
-  "name": "@naked-ui/vue",
+  "name": "@naked-ui/svelte",
   "version": "0.0.1",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "unpkg": "dist/index.js",
+  "jsdelivr": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
