@@ -1,6 +1,6 @@
 {
   "name": "@naked-ui/svelte",
-  "version": "0.0.5",
+  "version": "0.0.10",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
     "test": "jest test",
     "test:watch": "yarn test -- --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "del-cli docs && build-storybook -c .storybook -o docs",
+    "build-storybook": "del-cli storybook-static && build-storybook -c .storybook -o storybook-static",
     "chromatic": "npx chromatic --project-token=24c457aa702f"
   },
   "devDependencies": {

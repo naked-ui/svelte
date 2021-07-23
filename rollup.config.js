@@ -11,6 +11,8 @@ const name = pkg.name
 	.replace(/^\w/, m => m.toUpperCase())
 	.replace(/-\w/g, m => m[1].toUpperCase());
 
+const production = !process.env.ROLLUP_WATCH
+
 export default {
 	input: 'src/index.js',
 	output: [
@@ -22,7 +24,7 @@ export default {
 		svelte({
 			preprocess: sveltePreprocess(
 				{
-					// sourceMap: !production,
+					sourceMap: !production,
 					postcss: {
 						plugins: [require('autoprefixer')()]
 					}
