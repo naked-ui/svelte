@@ -20,7 +20,7 @@ export default {
 		svelte({
 			preprocess: sveltePreprocess(
 				{
-					sourceMap: !production,
+					// sourceMap: !production,
 					postcss: {
 						plugins: [require('autoprefixer')()]
 					}
