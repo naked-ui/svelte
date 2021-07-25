@@ -1,6 +1,6 @@
 {
   "name": "@naked-ui/svelte",
-  "version": "0.0.40",
+  "version": "0.0.41",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
