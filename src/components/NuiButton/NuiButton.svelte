@@ -1,4 +1,6 @@
 <script>
+  import cssVar from '../../utils/cssVar.js';
+
   export let namespace = 'nui-button';
   export let classes;
   export let href, target, rel;
@@ -23,21 +25,21 @@
 
   let componentClasses = `${namespace} ${classes ? classes : ''}`
 
-	const style =
-    '--height:' + height + ';' +
-    '--width:' + width + ';' +
-    '--padding:' + padding + ';' +
-    '--borderWidth:' + borderWidth + ';' +
-    '--borderStyle:' + borderStyle + ';' +
-    '--gap:' + gap + ';' +
-    '--fontSize:' + fontSize + ';' +
-    '--background:' + background + ';' +
-    '--backgroundHover:' + backgroundHover + ';' +
-    '--color:' + color + ';' +
-    '--colorHover:' + colorHover + ';' +
-    '--borderColor:' + borderColor + ';' +
-    '--borderColorHover:' + borderColorHover + ';'
-  ;
+	const style =[
+    cssVar('height', height),
+    cssVar('width', width),
+    cssVar('padding', padding),
+    cssVar('borderWidth', borderWidth),
+    cssVar('borderStyle', borderStyle),
+    cssVar('gap', gap),
+    cssVar('fontSize', fontSize),
+    cssVar('background', background),
+    cssVar('backgroundHover', backgroundHover),
+    cssVar('color', color),
+    cssVar('colorHover', colorHover),
+    cssVar('borderColor', borderColor),
+    cssVar('borderColorHover', borderColorHover)
+  ];
 </script>
 
 {#if !href}
