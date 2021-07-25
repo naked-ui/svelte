@@ -24,19 +24,19 @@
   let componentClasses = `${namespace} ${classes ? classes : ''}`
 
 	const style = `
-    ${height ? `--height: ${height};` : ''}
-    ${width ? `--width: ${width};` : ''}
-    ${padding ? `--padding: ${padding};` : ''}
-    ${borderWidth ? `--borderWidth: ${borderWidth};` : ''}
-    ${borderStyle ? `--borderStyle: ${borderStyle};` : ''}
-    ${gap ? `--gap: ${gap};` : ''}
-    ${fontSize ? `--fontSize: ${fontSize};` : ''}
-    ${background ? `--background: ${background};` : ''}
-    ${backgroundHover ? `--backgroundHover: ${backgroundHover};` : ''}
-    ${color ? `--color: ${color};` : ''}
-    ${colorHover ? `--colorHover: ${colorHover};` : ''}
-    ${borderColor ? `--borderColor: ${borderColor};` : ''}
-    ${borderColorHover ? `--borderColorHover: ${borderColorHover};` : ''}
+    ${height ? '--height:' + height + ';' : ''}
+    ${width ? '--width:' + width + ';' : ''}
+    ${padding ? '--padding:' + padding + ';' : ''}
+    ${borderWidth ? '--borderWidth:' + borderWidth + ';' : ''}
+    ${borderStyle ? '--borderStyle:' + borderStyle + ';' : ''}
+    ${gap ? '--gap:' + gap + ';' : ''}
+    ${fontSize ? '--fontSize:' + fontSize + ';' : ''}
+    ${background ? '--background:' + background + ';' : ''}
+    ${backgroundHover ? '--backgroundHover:' + backgroundHover + ';' : ''}
+    ${color ? '--color:' + color + ';' : ''}
+    ${colorHover ? '--colorHover:' + colorHover + ';' : ''}
+    ${borderColor ? '--borderColor:' + borderColor + ';' : ''}
+    ${borderColorHover ? '--borderColorHover:' + borderColorHover + ';' : ''}
   `;
 </script>
 
