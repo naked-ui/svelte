@@ -40,10 +40,6 @@
   `;
 </script>
 
-<svelte:head>
-  <link rel="stylesheet" href="./NuiButton.css">
-</svelte:head>
-
 {#if !href}
 	<button
     class="{componentClasses}"
