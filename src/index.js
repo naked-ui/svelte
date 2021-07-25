@@ -1,3 +1,5 @@
-import NuiButton from './components/NuiButton/NuiButton.svelte'
+// import NuiButton from './components/NuiButton/NuiButton.svelte'
 
-export { NuiButton }
+// export { NuiButton }
+
+export { default as NuiButton } from './components/NuiButton/NuiButton.svelte';
