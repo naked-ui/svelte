@@ -23,21 +23,21 @@
 
   let componentClasses = `${namespace} ${classes ? classes : ''}`
 
-	const style = `
-    ${height ? '--height:' + height + ';' : ''}
-    ${width ? '--width:' + width + ';' : ''}
-    ${padding ? '--padding:' + padding + ';' : ''}
-    ${borderWidth ? '--borderWidth:' + borderWidth + ';' : ''}
-    ${borderStyle ? '--borderStyle:' + borderStyle + ';' : ''}
-    ${gap ? '--gap:' + gap + ';' : ''}
-    ${fontSize ? '--fontSize:' + fontSize + ';' : ''}
-    ${background ? '--background:' + background + ';' : ''}
-    ${backgroundHover ? '--backgroundHover:' + backgroundHover + ';' : ''}
-    ${color ? '--color:' + color + ';' : ''}
-    ${colorHover ? '--colorHover:' + colorHover + ';' : ''}
-    ${borderColor ? '--borderColor:' + borderColor + ';' : ''}
-    ${borderColorHover ? '--borderColorHover:' + borderColorHover + ';' : ''}
-  `;
+	const style =
+    '--height:' + height + ';' +
+    '--width:' + width + ';' +
+    '--padding:' + padding + ';' +
+    '--borderWidth:' + borderWidth + ';' +
+    '--borderStyle:' + borderStyle + ';' +
+    '--gap:' + gap + ';' +
+    '--fontSize:' + fontSize + ';' +
+    '--background:' + background + ';' +
+    '--backgroundHover:' + backgroundHover + ';' +
+    '--color:' + color + ';' +
+    '--colorHover:' + colorHover + ';' +
+    '--borderColor:' + borderColor + ';' +
+    '--borderColorHover:' + borderColorHover + ';'
+  ;
 </script>
 
 {#if !href}
