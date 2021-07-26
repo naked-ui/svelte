@@ -1,3 +1,3 @@
-export default function cssVar(n, v) {
-  return '--' + n + ':' + v + ';';
+export function cssVar(n, v) {
+  if (v) return '--' + n + ':' + v + ';';
 }
