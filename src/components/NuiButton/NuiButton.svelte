@@ -82,3 +82,61 @@
     </div>
   </a>
 {/if}
+
+<style lang="scss">
+@import 'sxcss';
+
+.nui-button {
+  @include flex($place: center);
+  appearance: none;
+  cursor: pointer;
+  padding: var(--padding);
+  height: var(--height);
+  width: var(--width);
+  font-size: var(--fontSize, 16px);
+  border: var(--borderWidth) var(--borderStyle, solid) var(--borderColor, var(--color));
+
+  /** CONTENT **/
+
+  /// Text & icons color
+
+  &__text,
+  &__icon {
+    @include flex($place: center);
+    svg {
+      fill: var(--color) !important;
+    }
+  }
+
+  /// Icons
+
+  &__icon {
+    &--left {
+      margin-right: var(--gap);
+    }
+    &--right {
+      margin-left: var(--gap);
+    }
+  }
+
+  /** STATES **/
+
+  &:not([disabled='disabled']),
+  &[busy='true'] {
+    background: var(--background);
+    border-color: var(--borderColor);
+    color: var(--color);
+
+
+    &:hover {
+      background: var(--backgroundHover, var(--background));
+      color: var(--colorHover, var(--color));
+      border-color: var(--borderColorHover, var(--borderColor));
+    }
+  }
+
+  &[disabled='disabled'] {
+    cursor: not-allowed;
+  }
+}
+</style>
