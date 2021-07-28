@@ -10,6 +10,7 @@
     padding,
     borderWidth,
     borderStyle,
+    borderRadius,
     gap,
     // Typography
     fontSize,
