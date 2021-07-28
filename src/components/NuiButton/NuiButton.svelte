@@ -31,6 +31,7 @@
     cssVar('padding', padding),
     cssVar('borderWidth', borderWidth),
     cssVar('borderStyle', borderStyle),
+    cssVar('borderStyle', borderRadius),
     cssVar('gap', gap),
     cssVar('fontSize', fontSize),
     cssVar('background', background),
@@ -95,6 +96,7 @@
   width: var(--width);
   font-size: var(--fontSize, 16px);
   border: var(--borderWidth) var(--borderStyle, solid) var(--borderColor, var(--color));
+  border-radius: var(--borderRadius);
 
   /** CONTENT **/
 
